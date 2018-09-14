@@ -51,7 +51,7 @@ static CoreDataManager *instance = nil;
 - (NSURL *)applicationDocument {
     
     NSURL *path = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].firstObject;
-    NSLog(@"path:%@", path);
+    NSLog(@"%@", path);
     return path;
 }
 
